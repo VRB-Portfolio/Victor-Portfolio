@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">VR</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a class="btn" href="#contact">Hire me</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1>Victor Ruiz</h1>
+        <p class="subtitle">
+          Student & developer building clean, useful projects with HTML, CSS, and Python.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Profile card">
+        <div class="avatar" aria-hidden="true"></div>
+        <h2>Victor Ruiz</h2>
+        <p>Web • Python • CS</p>
+        <div class="chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">Python</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-lead">
+          I am a student based in Spain, learning software development and building projects to improve every day.
+        </p>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What I do</h3>
+            <ul class="list">
+              <li>Responsive websites with HTML & CSS</li>
+              <li>Programming projects in Python</li>
+              <li>Clean code, good structure, and readable UI</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Skills</h3>
+            <div class="skill-grid">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">Python</div>
+              <div class="skill">Git</div>
+              <div class="skill">Problem Solving</div>
+              <div class="skill">Teamwork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-lead">A few things I’ve built recently.</p>
+
+        <div class="project-grid">
+          <article class="card project">
+            <h3>Pygame Asteroids</h3>
+            <p>Classic arcade game with OOP design: ship, rocks, collisions, scoring.</p>
+            <div class="project-links">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Calorie Balance Tracker</h3>
+            <p>Python program tracking daily intake vs activity with clean class design.</p>
+            <div class="project-links">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <h3>Wordle Solver (C)</h3>
+            <p>Bitmasks + feedback logic to filter word candidates efficiently.</p>
+            <div class="project-links">
+              <a href="#" class="link">Live</a>
+              <a href="#" class="link">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Want to work together? Send me a message.</p>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Contact info</h3>
+            <p><strong>Email:</strong> yourname@email.com</p>
+            <p><strong>Location:</strong> Spain</p>
+            <p><strong>GitHub:</strong> github.com/yourusername</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/yourusername</p>
+          </div>
+
+          <form class="card form" action="#" method="post">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send</button>
+            <p class="form-note">This form is front-end only (no backend yet).</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Victor Ruiz. All rights reserved.</p>
+      <a class="link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
